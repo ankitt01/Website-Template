@@ -38,18 +38,19 @@ body {
  }
  .logo {
      letter-spacing: 3px;
-     font-size: 20px;
+     font-size: 30px;
      cursor: pointer;
  }
  .nav-links {
      list-style: none;
      display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 50%;
  }
  li a {
      text-decoration: none;
      color: black;
+     position: relative;
  }
 .ham {
     display: none;
@@ -60,6 +61,21 @@ body {
 
 .nav-toggle {
     display: none;
+}
+nav li a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    transform: scale(0,1);
+    transition: all ease-in-out 250ms;
+}
+nav li a:hover::before {
+    transform: scale(1,1);
 }
 
 
@@ -72,7 +88,7 @@ body {
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
     .nav-links {
         position: absolute;
         right: 0;
