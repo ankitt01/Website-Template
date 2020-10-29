@@ -29,6 +29,7 @@ body {
 
 /* Navigation */
  nav {
+     position: relative;
      display: flex;
      justify-content: space-around;
      align-items: center;
@@ -45,7 +46,7 @@ body {
      list-style: none;
      display: flex;
     justify-content: space-around;
-    width: 50%;
+     width: 50%;
  }
  li a {
      text-decoration: none;
@@ -53,7 +54,7 @@ body {
      position: relative;
  }
 .ham {
-    display: none;
+    /* display: none; */
 }
 .ham i{
     cursor: pointer;
@@ -78,13 +79,45 @@ nav li a:hover::before {
     transform: scale(1,1);
 }
 
-
+.social-links {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.social-links i {
+    /* background-color: red; */
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.social-links i:nth-of-type(2) {
+    padding: 7px 10px;
+}
+.social-links i:hover {
+    border-radius: 50%;
+    transition: 0.5s;
+    color: white;
+}
+.social-links i:nth-of-type(1):hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.social-links i:nth-of-type(2):hover {
+    background-color: #3b5998;
+}
+.social-links i:nth-of-type(3):hover {
+    background-color: #00acee;
+}
+.ham:hover {
+    color: red;
+}
 
 
 
 @media screen and (max-width: 800px) {
     .nav-links {
-        width: 70%;
+        display: none;
     }
 }
 
@@ -94,7 +127,6 @@ nav li a:hover::before {
         right: 0;
         height: 90vh;
         top: 10vh;
-        margin-top: 15px;
         box-shadow: 0px 0px 10px rgba(0,0,0,.2);
         display: flex;
         flex-direction: column;
@@ -102,7 +134,7 @@ nav li a:hover::before {
         align-items: center;
         width: 50%;
         transform: translateX(100%);
-        
+        background: rgba(247, 28, 82, 0.9);
     }
     .nav-toggle:checked ~ .nav-links {
         transform: translateX(0%);
@@ -110,5 +142,8 @@ nav li a:hover::before {
     }
     .ham {
         display: block;
+    }
+    .social-links{
+        display: none;
     }
 }
