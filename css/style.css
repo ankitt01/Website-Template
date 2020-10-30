@@ -38,11 +38,11 @@ body {
      font-size: 18px;
      margin-bottom: 50px;
  }
- .logo {
-     letter-spacing: 3px;
-     font-size: 30px;
+ .logo img {
+     width: 70%;
      cursor: pointer;
  }
+ 
  .nav-links {
      list-style: none;
      display: flex;
@@ -196,12 +196,14 @@ nav li a:hover::before {
     transition: 250ms ease;
 }
 
-
+.div {
+    position: relative;
+}
 .overlay-2 {
     position: absolute;
-    height: 680px;
+    height: 100%;
     width: 50%;
-    bottom: -487px;
+    /* bottom: -429px; */
     background-color: #39d47a;
     right: 0;
 }
@@ -251,9 +253,57 @@ nav li a:hover::before {
     font-size: 20px;
 }
 
+/* Stats */
 
-
-
+.stats {
+    
+    margin-top: 50px;
+}
+.data {
+    width: 60%;
+    margin: 0 auto;
+    /* background-color: red; */
+    padding: 50px 200px;
+    text-align: center;
+}
+.data span p {
+    color: red;
+    font-size: 18px;
+}
+.data h1 {
+    font-weight: 700;
+    font-family: Oswald;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.data p {
+    line-height: 1.4;
+    font-family: Roboto, sans-serif;
+    color: #999;
+}
+.circles {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.box {
+    position: relative;
+}
+.box label {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box p {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 20px;
+}
 
 
 
@@ -319,6 +369,17 @@ nav li a:hover::before {
     .icons > div {
         padding: 35px;
     }
+
+    .data {
+        width: 80%;
+        padding:  50px 0;
+    }
+    .circles {
+        flex-direction: column;
+    }
+    .box {
+        margin-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -372,6 +433,11 @@ nav li a:hover::before {
         font-size: 15px;
     }
 
+
+    .data {
+        padding: 20px 0;
+        width: 90%;
+    }
 
     
 }
