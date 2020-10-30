@@ -306,6 +306,75 @@ nav li a:hover::before {
 }
 
 
+/* Team */
+
+.team {
+    position: relative;
+}
+.team-content {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f71c52;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 60vh;
+}
+.data2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    position: relative;
+    margin-top: 100px;
+    /* padding-right: 100px; */
+}
+.data2 h1{
+    font-weight: 700;
+    font-family: Oswald;
+    font-size: 55px;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+.data2 p {
+    font-family: Robot0;
+    line-height: 1.4;
+    font-size: 18px;
+
+}
+.overlay-3 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f71c52;
+    z-index: 0;
+}
+.glider img {
+    width: 500px;
+}
+.glider label, .glider span {
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Roboto;
+    margin-top: 20px;
+}
+.glider span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px) {
     .nav-links {
@@ -380,6 +449,27 @@ nav li a:hover::before {
     .box {
         margin-bottom: 50px;
     }
+    .team-content {
+        grid-template-columns: 1fr;
+        height: 85vh;
+        width: 100%;
+    }
+    .overlay-3 {
+        width: 100%;
+    }
+    .data2 {
+        all: unset;
+        color: white;
+        padding: 0 50px;
+        position: relative;
+        text-align: center
+
+    }
+    
+    
+
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -440,4 +530,10 @@ nav li a:hover::before {
     }
 
     
+    .data2 {
+        padding: 0;
+        width: 90vw;
+    }
+
+
 }
