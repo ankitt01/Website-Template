@@ -351,29 +351,13 @@ nav li a:hover::before {
     background-color: #f71c52;
     z-index: 0;
 }
-.glider img {
-    width: 500px;
-}
-.glider label, .glider span {
-    color: white;
-    text-align: center;
-    display: block;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: Roboto;
-    margin-top: 20px;
-}
-.glider span {
-    font-size: 18px;
-    font-weight: 500;
-}
+
 
 
 /* Portfolio */
 .portfolio {
     width: 60%;
     margin: 50px auto;
-    background-color: pink;
     display: grid;
     grid-gap: 50px;
     grid-template-columns: 1fr 1fr;
@@ -385,8 +369,9 @@ nav li a:hover::before {
     margin-bottom: 50px;
 }
 .portfolio img{
-    margin-bottom: 50px;
+    margin: 50px 0;
     width: 100%;
+    height: 100%;
 }
 .tail {
     display: flex;
@@ -405,18 +390,17 @@ nav li a:hover::before {
     margin-top: 30px;
     margin-right: 50px;
     border-radius: 100vw;
-    border:  solid 1px #39d47a;
+    border: none;
     background-color:#39d47a;
     color: white;
-}
-
-.tail button:hover {
-    /* color: white; */
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 .tail button::before{
     content: '';
     position: absolute;
-    width: 0px;
+    width: 0%;
     height: 100%;
     background-color: #f71c52;;
     border-radius: 100vw;
@@ -428,7 +412,34 @@ nav li a:hover::before {
     width: 100%;
     transition: 250ms;
 }
-
+.image {
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+    overflow: hidden;
+    transition: 500ms;
+}
+.overlay-4 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    background-color: rgba(247, 28, 82, 0.6);
+    display: grid;
+    place-items: center;
+    font-size: 100px;
+    color: white;
+    transform: scale(0);
+    transition: 250ms;
+}
+.image:hover > .overlay-4{
+    transform: scale(1);
+    transition: 250ms;
+}
+.image:hover > img {
+    transform: scale(1.2);
+    transition: 500ms;
+}
 
 
 
@@ -523,7 +534,9 @@ nav li a:hover::before {
         text-align: center
 
     }
-    
+    .portfolio {
+        width: 90%;
+    }
     
 
 
@@ -593,5 +606,8 @@ nav li a:hover::before {
         width: 90vw;
     }
 
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
 
 }
