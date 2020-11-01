@@ -7,8 +7,14 @@ body {
     /* min-width:1000px;   */
     overflow-x: hidden;
 }
+html {
+    scroll-behavior: smooth;
+}
 .wrapper {
     overflow-x: hidden;
+}
+button {
+    outline: none;
 }
 .top {
     width: 100vw;
