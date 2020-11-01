@@ -419,7 +419,6 @@ nav li a:hover::before {
     margin-bottom: 50px;
     overflow: hidden;
     transition: 500ms;
-    height: 550px;
 }
 .overlay-4 {
     position: absolute;
@@ -610,5 +609,7 @@ nav li a:hover::before {
     .portfolio {
         grid-template-columns: 1fr;
     }
-
+    .image {
+        height: 346px;
+    }
 }
