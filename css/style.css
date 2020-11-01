@@ -419,6 +419,7 @@ nav li a:hover::before {
     margin-bottom: 50px;
     overflow: hidden;
     transition: 500ms;
+    height: 550px;
 }
 .overlay-4 {
     position: absolute;
