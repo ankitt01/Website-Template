@@ -450,6 +450,76 @@ nav li a:hover::before {
     transition: 500ms;
 }
 
+/* Testimonial */
+.testimonials{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    /* padding: 50px;   */
+    margin: 60px auto 50px auto;
+    height: 440px;
+    color: white;
+}
+.overlay-5 {
+    background-color: #554c86;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    width: 50%;
+
+}
+.test-left {
+    padding: 100px 50px;
+    background-color: #554c86;
+}
+.test-left h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+.test-left p {
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+.test-right {
+    background-color: #554c86;
+    padding: 100px 50px;
+    position: relative;
+}
+.test-right i {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.test-right p {
+    font-size: 18px;
+    font-family: roboto;
+}
+.test-right img {
+    border-radius: 50%;
+    width: 100px;
+    left: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+.test-right label {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: roboto;
+}
+
+
+
+
+
 
 
 
